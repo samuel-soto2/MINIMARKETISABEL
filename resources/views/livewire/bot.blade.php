@@ -35,7 +35,7 @@
         <button
             wire:click="sendMessage"
             class="p-4 ml-2 text-white bg-blue-500 rounded-r-lg hover:bg-blue-600 transition-all duration-200">
-            Enviar
+            Enviar.
         </button>
     </div>
 </div>
