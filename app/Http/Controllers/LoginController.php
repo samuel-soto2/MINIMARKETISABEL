@@ -24,6 +24,7 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
             Auth::user();
+            
 
             if(Auth::user()->permisos){
                 foreach (Auth::user()->permisos as $permiso) {
@@ -38,7 +39,7 @@ class LoginController extends Controller
             return redirect()->route('login')->with('error', 'Credenciales incorrectas');
         }
     }
-    
+
 
     public function logout()
     {
