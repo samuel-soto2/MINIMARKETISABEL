@@ -38,6 +38,7 @@ class LoginController extends Controller
             return redirect()->route('login')->with('error', 'Credenciales incorrectas');
         }
     }
+    
 
     public function logout()
     {
