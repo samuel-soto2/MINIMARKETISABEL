@@ -70,7 +70,7 @@ class Movimientos extends Component
     }
     public function updatedCantidad(){
         // Ensure that cantidad is a valid number (cast to float or integer)
-        $this->cantidad = (float) $this->cantidad;  // Cast to float to handle decimal values
+        $this->cantidad = (float) $this->cantidad;  
         $this->precio = (float) $this->precio;      // Ensure precio is also a valid number (in case it's a string)
     
         // Ensure both values are numeric before multiplying
