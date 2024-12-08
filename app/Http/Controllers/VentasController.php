@@ -25,7 +25,7 @@ class VentasController extends Controller
     
         // Verificar si hay suficiente stock
         if ($producto->stock < $request->cantidad) {
-            return back()->with('error', 'No hay suficiente stock para realizar la venta.');
+            return back()->with('error', 'No hay suficiente stock para realizar la venta');
         }
     
         // Crear la venta
