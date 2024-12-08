@@ -69,11 +69,11 @@ class Movimientos extends Component
         }
     }
     public function updatedCantidad(){
-        // Ensure that cantidad is a valid number (cast to float or integer)
+        
         $this->cantidad = (float) $this->cantidad;  
-        $this->precio = (float) $this->precio;      // Ensure precio is also a valid number (in case it's a string)
+        $this->precio = (float) $this->precio;      
     
-        // Ensure both values are numeric before multiplying
+        
         if (is_numeric($this->cantidad) && is_numeric($this->precio)) {
             $this->total = $this->cantidad * $this->precio;  // Perform multiplication
         } else {
