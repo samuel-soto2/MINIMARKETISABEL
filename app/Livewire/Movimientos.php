@@ -75,9 +75,9 @@ class Movimientos extends Component
     
         
         if (is_numeric($this->cantidad) && is_numeric($this->precio)) {
-            $this->total = $this->cantidad * $this->precio;  // Perform multiplication
+            $this->total = $this->cantidad * $this->precio;  
         } else {
-            $this->total = 0;  // Set total to 0 if either value is invalid
+            $this->total = 0;  
         }
     }
     public $editVenta;
